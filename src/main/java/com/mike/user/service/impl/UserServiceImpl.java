@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
         message.setFrom(from);
         message.setTo(user.getEmail());
         message.setSubject("please click the link to active your account");
-        message.setText("http://localhost:8081/userservice/user/"+result.getId());
+        message.setText("http://172.18.9.97:8081/userservice/user/"+result.getId());
         //message.setText("hello");
         mailSender.send(message);
     }
